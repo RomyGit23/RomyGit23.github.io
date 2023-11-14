@@ -36,6 +36,8 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <!-- Liste des menus -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
                             href="#introduction">Introduction</a></li>
@@ -87,7 +89,8 @@
             <!-- Portfolio Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projets</h2>
             <br>
-            <!-- Icon Divider-->
+            
+            <!-- Projet 1: -->
             <h3>Projet en apprentissage machine</h3>
             <ul>
                 <li>Développer un algorithme d'apprentissage machine pour la classification précise de deux variétés de
@@ -100,6 +103,7 @@
                 </li>
             </ul>
 
+            <!-- Carousel Projet 1 -->
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -135,6 +139,7 @@
 
 
             <br><br>
+            <!-- Projet 2: -->
             <h3>BlueJayDB</h3>
             <ul>
                 <li>Développer les capacités de BlueJayDB, un logiciel qui intègre plusieurs bases de données en une
@@ -146,6 +151,7 @@
                 
             </ul>
 
+            <!-- Carousel Projet 2 -->
             <div id="carouselExample2" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -177,6 +183,43 @@
                 <div class="divider-custom-line"></div>
             </div>
 
+            <br><br>
+            <!-- Projet 3: -->
+            <h3>Jeu de sudoku</h3>
+            <ul>
+                <li>Développer une mini-application de jeu de sudoku personalisé en C++</li>
+                <li>Rendre l'application interactive pour l'utilisateur</li>
+                <li>Ajouter une fonctionnalité qui imite la manière dont un humain tape au clavier.</li>
+                <li>Implémenter le jeu sur la ligne de commande</li>
+            </ul>
+
+            <!-- Carousel Projet 3 -->
+            <div id="carouselExample3" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/projet31.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/projet32.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/projet33.GIF" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/projet34.PNG" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
         </div>
     </section>
@@ -188,28 +231,45 @@
         <div class="container">
             <!-- skills Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-white">Compétences</h2>
-            <ul>
-                <li>C++ <span class="badge bg-success">Avancé</span></li>
-                <li>Python <span class="badge bg-success">Avancé</span></li>
-                <li>SQL <span class="badge bg-success">Avancé</span></li>
-                <li>Linux <span class="badge bg-success">Avancé</span></li>
-                <li>Mysql/MariaDB <span class="badge bg-success">Avancé</span></li>
-                <li>Microsoft Visual Studio <span class="badge bg-success">Avancé</span></li>
-                <li>C# <span class="badge bg-warning text-dark">Intermédiaire</span></li>
-                <li>Java <span class="badge bg-warning text-dark">Intermédiaire</span></li>
-                <li>Netbeans <span class="badge bg-warning text-dark">Intermédiaire</span></li>
-                <li>Visual Studio Code <span class="badge bg-warning text-dark">Intermédiaire</span></li>
-                <li>SQL Server <span class="badge bg-warning text-dark">Intermédiaire</span></li>
-                <li>Assembleur <span class="badge bg-light text-dark">Junior</span></li>
-                <li>TypeScript <span class="badge bg-light text-dark">Junior</span></li>
-                <li>Scheme <span class="badge bg-light text-dark">Junior</span></li>
-                <li>Prolog <span class="badge bg-light text-dark">Junior</span></li>
-            </ul>
+            <br><br>
+
+            <!-- Tableau des compétences et niveaux -->
+            <table class="skills-table">
+                <tbody>
+                    <tr>
+                        <td>C++ <span class="badge bg-success">Avancé</span></td>
+                        <td>C# <span class="badge bg-warning text-dark">Intermédiaire</span></td>
+                        <td>Assembleur <span class="badge bg-light text-dark">Junior</span></td>
+                    </tr>            
+                    <tr>
+                        <td>Python <span class="badge bg-success">Avancé</span></td>
+                        <td>Java <span class="badge bg-warning text-dark">Intermédiaire</span></td>
+                        <td>TypeScript <span class="badge bg-light text-dark">Junior</span></td>
+                    </tr>
+                    <tr>
+                        <td>SQL <span class="badge bg-success">Avancé</span></td>
+                        <td>Netbeans <span class="badge bg-warning text-dark">Intermédiaire</span></td>
+                        <td>Scheme <span class="badge bg-light text-dark">Junior</span></td>
+                    </tr>
+                    <tr>
+                        <td>Linux <span class="badge bg-success">Avancé</span></td>
+                        <td>Visual Studio Code <span class="badge bg-warning text-dark">Intermédiaire</span></td>
+                        <td>Prolog <span class="badge bg-light text-dark">Junior</span></td>
+                    </tr>
+                    <tr>
+                        <td>Mysql/MariaDB <span class="badge bg-success">Avancé</span></td>
+                        <td>SQL Server <span class="badge bg-warning text-dark">Intermédiaire</span></td>             
+                    </tr>
+                    <tr>
+                        <td>Microsoft Visual Studio <span class="badge bg-success">Avancé</span></td>                      
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
     </section>
 
-    <!-- Realisation Section -->
+    <!-- Réalisation Section -->
     <section class="page-section bg-custom1 text-white mb-0" id="realisation">
         <div class="divider-custom divider-light">
             <div class="divider-custom-line"></div>
@@ -217,6 +277,8 @@
             <div class="divider-custom-line"></div>
         </div>
         <h2 class="page-section-heading text-center text-uppercase text-white">Réalisations</h2>
+
+        <!-- Réalisation 1 -->
         <div class="alert alert-success" role="alert">
             <h4 class="alert-heading"><img src="assets/img/stats_up.svg" alt="ML" /> Modèle d'apprentissage machine</h4>
             <p>Conception d'un modèle d'apprentissage machine pour la prédiction de deux variétés de riz, fondé sur
@@ -227,6 +289,7 @@
             <p><u>Technologies utilisées</u> : Python, Numpy, Pandas, Scikit-learn, TensorFlow, Keras</p>
         </div>
 
+        <!-- Réalisation 2 -->
         <div class="alert alert-success" role="alert">
             <h4 class="alert-heading"><img src="assets/img/db.svg" alt="DataBase" /> Amélioration de BlueJayDB</h4>
             <p>Amélioration du logiciel BlueJayDB par l'ajout de fonctionnalités pour 
@@ -243,13 +306,9 @@
     <section class="page-section" id="contact">
         <div class="container">
             <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Me contacter</h2>
+ 
+            <p class="contactp">Pour me contacter, veuillez remplir le formulaire ci-dessous:</p>
             <!-- Contact Section Form-->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">

@@ -3,79 +3,116 @@
 .bg-custom1 {
     background-color: rgb(0, 0, 0, 1) !important;
 }
+
 .bg-custom2 {
     background-color: rgb(30, 30, 30, 1) !important;
 }
 
-ul li{
-    font-size:18px;
+ul li {
+    font-size: 18px;
 }
-ul, h2{
-    padding:30px;
+
+ul,
+h2 {
+    padding: 30px;
 }
+
 /* Scroll up */
-.scrollup{
+.scrollup {
     position: fixed;
     bottom: 40px;
-    right:0;
-    z-index:5;
-    width:50px;
-    height:30px;
+    right: 0;
+    z-index: 5;
+    width: 50px;
+    height: 30px;
     border-radius: 14px 1px 1px 14px;
     padding-left: 7px;
     background: #c8cfd7 none repeat scroll 0% 0%;
-    
+
 }
 
 /*-----------------------------Introduction----------------------*/
 /* Photo de profil rond*/
 .masthead-avatar {
     border-radius: 50%;
-    margin:40px;
+    margin: 40px;
 }
 
 /*-----------------------------Projets----------------------*/
-    /*----------------Carousel------------*/
+/*----------------Carousel------------*/
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-image: none; /* Suppression de la flèche originale */
+    background-image: none;
+    /* Suppression de la flèche originale */
 }
 
 .carousel-control-prev-icon:after,
 .carousel-control-next-icon:after {
-  content: '>'; 
-  font-size: 50px; /* Taille flèche */
-  color: black; 
+    content: '>';
+    font-size: 50px;
+    /* Taille flèche */
+    color: black;
+}
+
+/* Couleur blanche pour le 3rd carousel */
+#carouselExample3 .carousel-control-prev-icon:after,
+#carouselExample3 .carousel-control-next-icon:after {
+    color: white;
 }
 
 .carousel-control-prev-icon:after {
-  content: '<'; 
+    content: '<';
 }
 
 /* Longueur de la carousel */
-#carouselExample, #carouselExample2{
-    max-width: 75%; /* Longueur max */
-    margin: auto; /* Centrer si ce n'est pas full width */
+#carouselExample,
+#carouselExample2,
+#carouselExample3 {
+    max-width: 75%;    /* Longueur max */
+    margin: auto;   /* Centrer si ce n'est pas full width */
     border: 10px solid black;
 }
-  
+
 /* Hauteur et couleur carousel */
 .carousel-item {
-height: 500px; /* hauteur */
-background-color: black; /* Couleur de fond pour chaque élément du carousel */
+    height: 500px;
+    /* hauteur */
+    background-color: black;
+    /* Couleur de fond pour chaque élément du carousel */
 }
-  
+
 /* taille Image doit fit le carousel */
 .carousel-item img {
-object-fit: contain;
-width: 100%;
-height: 100%;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/*-----------------------------Compétences-----------------------*/
+/*------Format du tableau------*/
+.skills-table {
+    font-size:18px;
+    width: 75%;
+    border-collapse: collapse;
+    /* Centrer le tableau */
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+.skills-table td {
+    padding: 5px;
+    text-align: left;
 }
 
 /*-----------------------------Réalisation----------------------*/
-.alert{
+.alert {
     margin-left: auto;
     margin-right: auto;
-    width:700px;
+    width: 700px;
 }
 
+/*-----------------------------Coordonnées----------------------*/
+.contactp{
+    text-align: center;
+    font-size:18px;
+}
