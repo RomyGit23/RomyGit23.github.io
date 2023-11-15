@@ -68,8 +68,10 @@ h2 {
 #carouselExample,
 #carouselExample2,
 #carouselExample3 {
-    max-width: 75%;    /* Longueur max */
-    margin: auto;   /* Centrer si ce n'est pas full width */
+    max-width: 75%;
+    /* Longueur max */
+    margin: auto;
+    /* Centrer si ce n'est pas full width */
     border: 10px solid black;
 }
 
@@ -91,12 +93,12 @@ h2 {
 /*-----------------------------Compétences-----------------------*/
 /*------Format du tableau------*/
 .skills-table {
-    font-size:18px;
+    font-size: 18px;
     width: 75%;
     border-collapse: collapse;
     /* Centrer le tableau */
-    margin-left: auto;  
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skills-table td {
@@ -112,8 +114,60 @@ h2 {
 }
 
 /*-----------------------------Coordonnées----------------------*/
-.contactp{
+.contactp {
     text-align: center;
-    font-size:18px;
+    font-size: 18px;
+}
+
+/*----------------------------GRID---------------------------*/
+
+
+/* Pour tous les Width max 1023 */
+@media only screen and (max-width: 1023px) {
+    body {
+        grid-template-rows: repeat(5, auto);
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 0;
+    }
+
+    header {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    main {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    aside {
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
+
+    footer {
+        grid-column: 1 / -1;
+        grid-row: 4;
+    }
+}
+
+/* Tablettes */
+@media only screen and (max-width: 768px) {
+    body {
+        grid-template-rows: repeat(5, auto);
+    }
+}
+
+/* Telephone mobile */
+@media only screen and (max-width: 480px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
 }
 
